@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --textcol:white;
     --textfont:"Netflix sans",sans-serif;
     --bradius:4px;
+    --sepbor:8px solid rgb(38, 38, 38);
+    --borcol:rgba(148, 148, 148, 0.6)
 }
 *{
     margin: 0;
@@ -17,13 +18,13 @@ body{
     background-size: max(1449px, 100vw);
     background-position: center center;
     position: relative;
-    border-bottom: 8px solid rgb(78, 78, 78);
+    border-bottom: var(--sepbor);
     background-repeat: no-repeat;
     z-index: 10;
 }
 
 .main .box{
-    height: 95vh;
+    height: 86vh;
     width: 100%;
     opacity: 0.66;
     position: absolute;
@@ -82,7 +83,6 @@ body{
     font-size: 25px;
 }
 .sub>:nth-child(3){
-    padding-left:30px ;
     font-size: 20px;
     font-weight: 350;
 }
@@ -109,4 +109,80 @@ body{
     border: none;
     padding: 12px 45px;
     font-size: 24px;
+}
+.first,.second,.third,.fourth{
+    margin:60px auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--textcol);
+}
+.desc{
+    color: var(--textcol);
+    font-family: var(--textfont);
+    padding: 15px 0;
+    font-size: 27px;
+    font-weight: 300;
+}
+.tv{
+    position: relative;
+}
+.tvvid{
+    position: absolute;
+    right: 71px;
+    width: 407px;
+    height: 398px;
+    z-index: -10;
+}
+.separator{
+    margin-top: 75px;
+    height:8px;
+    background-color:rgb(38, 38, 38);
+}
+.phone{
+    position: relative;
+}
+.downloadbox{
+    padding:10px 8px;
+    background-color:black;
+    position: absolute;
+    position: absolute;
+    width: 325px;
+    bottom: 40px;
+    left: 130px;
+    border: 1px solid var(--borcol);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.downimage img{
+    width: 65px;
+}
+.downtxt{
+    color: var(--textcol);
+    font-family: var(--textfont);
+}
+.downtxt>:nth-child(2){
+    color: blue;
+    font-weight: 300;
+}
+.compimg{
+    width:530px;
+    position: relative;
+    z-index: 10;
+}
+.compvid{
+    position: absolute;
+    right: 236px;
+    width: 352px;
+    height: 290px;
+}
+.kidsimg{
+    width: 540px;
 }
