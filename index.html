@@ -12,7 +12,7 @@
     <div class="main">
         <div class="box"></div>
         <nav class="flex-box">
-            <span><img width="150" class="logo" src="Assets/Images/logo.svg" alt="Netflix.svg"></span>
+            <span class="logo"><img width="150" class="logo" src="Assets/Images/logo.svg" alt="Netflix.svg"></span>
             <div class="navbuts">
                 <select name="Language" class="button langbut">
                     <option value="english">English</option>
@@ -39,14 +39,14 @@
             <p class="desc">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
             </p>
         </div>
-        <div class="tv">
-            <video class="tvvid" src="Assets/Videos/tv-video.m4v" autoplay loop></video>
+        <div class="secImg">
+            <video src="Assets/Videos/tv-video.m4v" autoplay loop></video>
             <img width="550" src="Assets/Images/tv.png" alt="TV.png">
         </div>
     </section>
     <div class="separator"></div>
     <section class="second">
-        <div class="phone">
+        <div class="secImg">
             <img width="600" src="Assets/Images/girl.jpg" alt="stanger things.jpg">
             <div class="downloadbox">
                 <div class="downimage">
@@ -69,15 +69,15 @@
             <h1 class="heading">Watch Everywhere</h1>
             <p class="desc">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
         </div>
-        <div>
-            <img class="compimg" src="Assets/Images/computer.png" alt="computer.png">
-            <video class="compvid" src="Assets/Videos/comp-video.m4v" loop autoplay></video>
+        <div class="secImg">
+            <video id="pos" src="Assets/Videos/comp-video.m4v" loop autoplay></video>
+            <img width="530" src="Assets/Images/computer.png" alt="computer.png">
         </div>
     </section>
     <div class="separator"></div>
     <section class="fourth">
-        <div>
-            <img class="kidsimg" src="Assets/Images/chid.png" alt="kids.png">
+        <div class="secImg">
+            <img class src="Assets/Images/chid.png" alt="kids.png">
         </div>
         <div>
             <h1 class="heading">Create profiles for kids</h1>
@@ -167,7 +167,7 @@
             <li><a class="link-items" href="">Only On Netflix</a></li>
         </ul>
         <div class="buttonf">
-            <select name="Language" class="button langbut">
+        <select name="Language" class="button langbut">
             <option value="english">English</option>
             <option value="Hindi">Hindi</option>
         </select></div>
