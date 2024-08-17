@@ -99,7 +99,7 @@ body{
 }
 .details{
     display: flex;
-    padding: 20px;
+    padding: 20px 0 0 0 ;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -185,4 +185,32 @@ body{
 }
 .kidsimg{
     width: 540px;
+}
+.faq>:nth-child(1){
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.faqtxt{
+    font-family: var(--textfont);
+    color: var(--textcol);
+    font-size: 25px;
+    font-weight: 300;
+}
+.faqbox{
+    box-sizing: border-box;
+    width: 80vw;
+    margin: 10px auto;
+    padding: 20px 30px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ready{
+    color: var(--textcol);
+    padding: 50px 0 10px 0;
+    font-family: var(--textfont);
+    text-align: center;
+    font-weight: 300;
+    font-size: 21px;
 }
