@@ -214,3 +214,13 @@ body{
     font-weight: 300;
     font-size: 21px;
 }
+footer{
+    width: 80vw;
+    box-sizing: border-box;
+    margin:0 auto;
+    padding: 50px;
+}
+.contact a{
+    font-family: var(--textfont);
+    color: var(--footxtcol);
+}
