@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --textcol:white;
+    --textfont:"Netflix sans",sans-serif;
+    --bradius:4px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("Assets/Images/bg.jpeg");
+    height: 86vh;
+    background-size: max(1449px, 100vw);
+    background-position: center center;
+    position: relative;
+    border-bottom: 8px solid rgb(78, 78, 78);
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.main .box{
+    height: 95vh;
+    width: 100%;
+    opacity: 0.66;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    z-index: -10;
+}
+.flex-box{
+    margin: 0 auto;
+    width: 77vw;
+    padding: 25px;
+    display: flex;
+    justify-content:space-between;
+}
+.buttonr:hover{
+    background-color: rgb(208, 4, 4);
+}
+.button{
+    font-family: var(--textfont);
+    color: var(--textcol);
+    border-radius: var(--bradius);
+    cursor: pointer;
+}
+.sign{
+    background-color: red;
+    border: none;
+    padding: 7px 15px;
+    margin-left: 15px;
+}
+.langbut{
+    background-color: rgba(0, 0, 0, 0.2);
+    border:0.1px solid gray;
+    padding: 6px 25px;
+    position: relative;
+    top:1px;
+    border-radius: var(--bradius);
+}
+.sub{
+    text-align: center;
+    margin-top: 120px;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textcol);
+    flex-direction: column;
+    font-family: var(--textfont);
+}
+.sub>:nth-child(1){
+    font-size: 24px;
+    font-weight: 1500;
+}
+.sub>:nth-child(2){
+    font-weight: 300;
+    padding: 18px;
+    font-size: 25px;
+}
+.sub>:nth-child(3){
+    padding-left:30px ;
+    font-size: 20px;
+    font-weight: 350;
+}
+.email{
+    height: 50px;
+    width: 325px;
+    padding:1px 0 1px 20px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    background-color:rgba(23,23,23,0.6) ;
+    border:1px solid rgba(148, 148, 148, 0.6);
+    border-radius: var(--bradius);
+}
+.details{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.gsb{
+    background-color: red;
+    border: none;
+    padding: 12px 45px;
+    font-size: 24px;
+}
