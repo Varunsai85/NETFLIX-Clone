@@ -3,7 +3,8 @@
     --textfont:"Netflix sans",sans-serif;
     --bradius:4px;
     --sepbor:8px solid rgb(38, 38, 38);
-    --borcol:rgba(148, 148, 148, 0.6)
+    --borcol:rgba(148, 148, 148, 0.6);
+    --footxtcol:rgb(175, 175, 175);
 }
 *{
     margin: 0;
@@ -196,12 +197,17 @@ body{
     font-size: 25px;
     font-weight: 300;
 }
+.faqbox:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #414141;
+}
 .faqbox{
+    transition: all 0.3s ease-in-out;
     box-sizing: border-box;
     width: 80vw;
     margin: 10px auto;
-    padding: 20px 30px;
-    background-color: rgb(48, 48, 48);
+    padding: 15px 30px;
+    background-color: #2d2d2d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,9 +224,23 @@ footer{
     width: 80vw;
     box-sizing: border-box;
     margin:0 auto;
-    padding: 50px;
+    padding: 80px 0;
 }
-.contact a{
+.contact, .contact a{
     font-family: var(--textfont);
     color: var(--footxtcol);
+}
+.links{
+    list-style: none;
+    padding:20px 0 5px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px;
+}
+.link-items{
+    color: var(--footxtcol);
+}
+.buttonf{
+    padding-bottom:20px;
 }
