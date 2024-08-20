@@ -250,6 +250,7 @@ footer{
     }
     .first,.second,.third,.fourth{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .second,.fourth{
         flex-wrap: wrap-reverse;
